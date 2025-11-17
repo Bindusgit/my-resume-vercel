@@ -10,6 +10,11 @@
   padding: 20px;
 }
 
+
+.resume-sidebar section {
+  margin-bottom: 25px; /* increases spacing between components */
+}
+
 .resume-main {
   width: 70%;
   padding: 20px;
@@ -30,6 +35,17 @@
   align-items: center;
   margin: 0 auto 20px;
   /* Responsive: scales down on smaller screens */
+}
+
+.personal-details-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.personal-details-list li {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
 }
 
 @media (max-width: 768px) {
@@ -112,3 +128,30 @@ section h2 {
   color: #888;
   font-size: 1rem;
 }
+
+.kv-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.kv-key {
+  width: 120px; /* adjust width as needed */
+  text-align: left;
+}
+
+.kv-colon {
+  margin: 0 8px;
+}
+
+.kv-value {
+  flex: 1;
+  text-align: left;
+}
+
+.resume-sidebar,
+.resume-main {
+  text-align: left;
+}
+
