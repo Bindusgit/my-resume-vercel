@@ -28,10 +28,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto 20px;
+  /* Responsive: scales down on smaller screens */
+}
 
-  top: 40px;        /* Adjust vertically as needed */
-  left: 20%;        /* Push it toward the red circle */
-  transform: translateX(33%);
+@media (max-width: 768px) {
+  .profile-pic-container {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-pic-container {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 
